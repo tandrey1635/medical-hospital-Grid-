@@ -1,0 +1,104 @@
+@import 'sass/variables' 
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+a
+    text-decoration: none   
+
+ul
+    list-style: none
+
+input, textarea
+    outline: none
+    border: none    
+textarea
+    resize: vertical
+
+button
+    outline: none
+    border: none 
+    cursor: pointer 
+
+
+html
+    height: 100%
+
+body
+    display: grid
+    grid-template-rows: auto 1fr auto
+    min-height: 100%
+
+
+.svg
+    width: 25px
+    height: 25px
+    fill: $buttonBg
+    &:hover
+        fill: $buttonHoverBg 
+
+
+.container
+    max-width: 1212px  
+    margin: 0 auto
+    @media( max-width: 1300px)
+        max-width: 1170px  
+    @media( max-width: 1225px)    
+        max-width: 1000px 
+    @media( max-width: 1023px)  
+        max-width: 950px 
+    @media( max-width: 991px)  
+        max-width: 700px 
+    @media( max-width: 767px)    
+        max-width: 540px
+    @media( max-width: 576px)   
+        max-width: 100%
+        padding: 0 15px  
+
+.container-1190  
+    max-width: 1190px  
+    @media( max-width: 1200px)    
+        max-width: 1000px 
+    @media( max-width: 1023px)  
+        max-width: 950px 
+    @media( max-width: 991px) 
+        max-width: 700px 
+    @media( max-width: 767px)    
+        max-width: 540px
+    @media( max-width: 576px)   
+        max-width: 100%
+        padding: 0 15px      
+.container-1110
+    max-width: 1110px 
+    @media( max-width: 1225px) 
+        max-width: 900px 
+    @media( max-width: 991px) 
+        max-width: 700px 
+    @media( max-width: 767px) 
+        max-width: 540px
+    @media( max-width: 576px) 
+        max-width: 100%  
+        padding: 0 15px              
+
+
+
+
+
+
+@import 'sass/header'     
+@import 'sass/promo'     
+@import 'sass/services'  
+@import 'sass/why-we' 
+@import 'sass/about'  
+@import 'sass/work'   
+@import 'sass/gallery' 
+@import 'sass/our__team'
+@import 'sass/special'
+@import 'sass/contacts'   
+@import 'sass/footer' 
+@import 'sass/titles'
+@import 'sass/buttons'
+@import 'sass/burger__menu'
+@import 'sass/arrow__up'

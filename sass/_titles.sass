@@ -1,0 +1,248 @@
+// заголовки
+.section__title
+    text-align: center
+    font-family: $titleFont
+    font-size: 45px
+    line-height: 1.2
+    font-weight: 700
+    color: $titleColor
+    @media( max-width: 767px)
+        font-size: 40px
+    @media( max-width: 576px)
+        font-size: 36px
+    @media( max-width: 360px) 
+        font-size: 30px    
+    &-second_color
+        color: $titleSecondColor
+    &_main__title   
+        font-size: 45px
+        font-weight: 700
+        letter-spacing: -0.025em
+        color: $titleMainColor
+        @media( max-width: 1225px) 
+            font-size: 45px
+        @media( max-width: 576px) 
+            font-size: 26px   
+        @media( max-width: 360px)    
+            font-size: 18px  
+.work__title   
+    text-align: left        
+.special__title
+    font-size: 30px
+    @media( max-width: 1225px)
+        font-size: 26px
+    @media( max-width: 767px) 
+        font-size: 20px  
+    @media( max-width: 576px) 
+        font-size: 16px  
+    @media( max-width: 360px)   
+        font-size: 14px           
+
+
+// подзаголовки
+.section__subtitle
+    font-family: $subTitleFont
+    font-size: 30px
+    line-height: 1.2
+    font-weight: 700
+    letter-spacing: -0.025em
+    color: $subTitleColor
+    @media( max-width: 1225px)   
+        font-size: 24px
+.header__subtitle
+    font-family: $headerFont
+    font-size: 15px
+    line-height: 22px
+    font-weight: 700
+    text-transform: uppercase
+    color: $headerSubtitleColor  
+.services__subtitle
+    text-align: center
+    color: $servicesSubTitleColor
+.why-we__subtitle
+    color: $whyWeSubTitleColor    
+.about__subtitle
+    margin-top: 46px   
+    font-size: 60px
+    font-weight: 500
+    color: $aboutSubTitleColor
+.work__subtitle-left, .work__subtitle-right
+    font-size: 20px
+    line-height: 1.2
+    font-weight: 500
+    letter-spacing: 0
+    color: $workSubtitleColor
+    &_active
+        color: $workSubtitleActiveColor
+.work__subtitle-left
+    margin-top: 35px    
+    @media( max-width: 767px)
+        text-align: center    
+.work__time, .work__autor
+    font-family: $workTimeFont
+    font-size: 15px
+    line-height: 1.2
+    font-weight: 500
+    letter-spacing: -0.025em
+    color: $workTimecolor 
+.work__time:after
+    content: '|' 
+    margin: 0 15px              
+.our__team__subtitle
+    margin-top: 30px
+    font-size: 25px
+    font-weight: 500
+    letter-spacing: 0
+    color: $ourTeamSubTitle
+.contacts__subtitle
+    font-family: $contactsFont
+    font-size: 22px
+    line-height: 24px
+    font-weight: 700
+    letter-spacing: 0.025em
+    color:  $contactsSubTitleColor 
+    @media( max-width: 767px)  
+        text-align: center  
+       
+
+// текст    
+.section__text
+    text-align: center
+    font-size: 16px
+    line-height: 30px
+    font-weight: 400
+    font-family: $textFont
+    color: $textColor 
+    &_work
+        margin-top: 38px
+        text-align: left 
+        @media( max-width: 1200px) 
+            text-align: center 
+    &__work_mt19  
+        margin-top: 19px 
+    @media( max-width: 576px) 
+        font-size: 14px  
+    &_work_mt28 
+        text-align: left
+        margin-top: 28px 
+        @media( max-width: 767px)
+            text-align: center    
+.section__link
+    font-family: $linkFont
+    font-size: 20px
+    line-height: 1.2
+    font-weight: 700
+    color: $sectionLink
+    &:hover
+        color: $sectionLinkHover 
+        @media( max-width: 767px)  
+            color: $sectionLinkMobileHover 
+    &_active
+        color: $sectionLinkActive 
+.header__link
+    @media( max-width: 1023px)  
+        font-size: 17px           
+.contacts__link, .contacts__label
+    font-family: $contactsLinkFont
+    font-size: 16px
+    line-height: 1.2
+    font-weight: 400
+    letter-spacing: 0.025em   
+    color: $sectionLink  
+.header__text, .header__top-link
+    text-align: left
+    font-size: 15px
+    line-height: 22px
+    font-weight: 400  
+    color: $textColor
+    .header__top-link:hover
+        color: $sectionLinkHover
+    @media( max-width: 480px)   
+        font-size: 13px
+    @media( max-width: 420px)  
+        font-size: 12px          
+.header__span
+    text-transform: uppercase          
+.promo__text
+    font-size: 17px
+    font-weight: 700
+    color: $promoTextColor
+    @media( max-width: 576px) 
+        font-size: 14px 
+    @media( max-width: 420px)
+        line-height: 1.2           
+.services__description
+    font-weight: 700 
+    font-size: 17px 
+    color: $servicesTextColor
+    @media( max-width: 1225px)  
+        font-size: 16px
+.why-we__text
+    margin-top: 20px 
+    text-align: left  
+.why-we_width-text 
+    width: 878px
+    margin: 31px auto 0
+    @media( max-width: 991px) 
+        width: 95%
+    @media( max-width: 360px) 
+        line-height: 1.2    
+.about__text
+    align-self: baseline
+    margin-top: 26px
+    font-size: 25px
+    line-height: 1.2
+    font-weight: 600
+    letter-spacing: -0.025em
+    color: $aboutTextColor   
+.gallery__text
+    width: 1116px
+    margin: 38px auto 0
+    font-weight: 700
+    color: $galleryTextColor
+    @media( max-width: 1225px) 
+        width: 878px
+    @media( max-width: 991px) 
+        width: 95%
+    @media( max-width: 360px) 
+        line-height: 1.2          
+    &_color 
+        margin: 0
+        padding: 10px
+        width: 100%
+        color: $galleryTextColor
+        font-size: 17px
+        @media( max-width: 767px) 
+            font-size: 14px
+        @media( max-width: 360px) 
+            font-size: 12px      
+.our__team__text
+    width: 1095px
+    margin: 49px auto 0
+    @media( max-width: 1225px) 
+        width: 878px
+    @media( max-width: 991px) 
+        width: 95%    
+    @media( max-width: 360px) 
+        line-height: 1.2      
+.our__team__info, .our__team__back__text
+    margin-top: 18px
+    font-family: $ourTeamTextFont
+    font-size: 18px
+    line-height: 1.2
+    font-weight: 500
+    letter-spacing: -0.025em
+    color: $ourTeamTextColor
+.our__team__back__text 
+    margin: 0    
+    color: $ourTeamBackfaceTextColor
+    @media( max-width: 767px)
+        font-size: 14px
+.contacts__text
+    text-align: left    
+.footer__copyright 
+    font-size: 13px
+    line-height: 24px    
+    color: $footerTextColor 
+    @media( max-width: 480px)  
+        line-height: 1.2    
