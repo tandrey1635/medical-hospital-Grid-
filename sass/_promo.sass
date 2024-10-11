@@ -1,0 +1,27 @@
+.promo
+    background: url('img/promo/promo-bg.jpg')no-repeat center/cover
+    min-height: 800px
+    @media( max-width: 991px)
+        background-position: 65% center
+    @media( max-width: 576px)  
+        min-height: 500px 
+    &__wrapper
+        display: grid
+        align-items: center
+        min-height: 800px
+        @media( max-width: 576px)  
+            min-height: 500px  
+    &__info
+        padding: 100px 0
+        width: 545px
+        display: grid
+        grid-template: repeat(3, auto)/ 545px
+        justify-items: center
+        align-content: center
+        @media( max-width: 991px) 
+            place-content: center
+        @media( max-width: 576px) 
+           grid-template: repeat(3, auto)/ .8fr    
+    &__text
+        margin-top: 27px    
+    

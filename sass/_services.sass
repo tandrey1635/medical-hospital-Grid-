@@ -1,0 +1,40 @@
+.services
+    min-height: 360px
+    &__wrapper
+        display: grid
+        grid-template: minmax(360px, auto)/ repeat(4, 1fr)
+        grid-auto-rows: minmax(360px, auto)
+        @media( max-width: 1225px)
+            grid-template: minmax(360px, auto)/ repeat(2, 1fr)
+        @media( max-width: 576px) 
+            grid-template: repeat(4, minmax(360px, auto))/ 1fr    
+    &__items
+        padding: 75px 0 56px 0
+        display: grid
+        justify-content: center
+        justify-items: center
+        grid-template: 100px minmax(50px, auto) 1fr / 264px
+        @media( max-width: 1225px)
+            padding: 30px 0
+        &_one
+            background: $servicesItemsBgOne
+        &_two
+            background: $servicesItemsBgTwo
+        &_three
+            background: $servicesItemsBgThree
+        &_four 
+            background: $servicesItemsBgFour       
+    &__img
+        display: grid
+        place-items: center
+        width: 75px
+        height: 75px
+        background: $secondItemBg
+        border-radius: 50%       
+    &__photo
+        width: 50px
+        height: 50px
+    &__description
+        align-self: baseline
+
+    

@@ -1,0 +1,65 @@
+.why-we
+    padding: 111px 0 0 0
+    min-height: 896px
+    &__wrapper
+        margin-top: 24px
+        display: grid
+        grid-template: repeat(2, minmax(170px, auto))/ 365px 340px 365px
+        place-content: center
+        align-items: end
+        column-gap: 60px
+        grid-auto-rows: 0
+        @media( max-width: 1225px)  
+            grid-template: repeat(3, minmax(170px, auto))/ repeat(2, 365px)
+            justify-content: space-evenly
+            column-gap: 0
+        @media( max-width: 767px) 
+            grid-template: repeat(5, minmax(170px, auto))/ 0.7fr
+        @media( max-width: 360px)  
+            grid-template: repeat(5, minmax(170px, auto))/ 1fr      
+    &__text
+        grid-column: 1/3
+    &__items
+        margin: 90px 0 70px 0
+        display: grid
+        align-items: center
+        align-self: self-start
+        column-gap: 18px
+        grid-template: repeat(2, minmax(75px, auto)) / 75px 1fr 
+        @media( max-width: 1225px)
+            margin: 50px 0 30px 0            
+        &_main-items  
+            display: flex
+            align-self: flex-end
+            height: 670px 
+            margin: 0
+            grid-template: auto / 340px
+            grid-column: 2
+            grid-row: 1/4
+            @media( max-width: 1225px)
+                grid-row: 2/4
+            @media( max-width: 767px) 
+                grid-row: 5
+                grid-column: 1 
+            @media( max-width: 480px)   
+                height: auto   
+    #atoms
+        @media( max-width: 1225px)
+            grid-column: 2  
+            grid-row: 1  
+        @media( max-width: 767px) 
+            grid-column: 1 
+            grid-row: 4   
+    &__img
+        display: grid
+        place-items: center
+        width: 75px
+        height: 75px
+        border-radius: 50%
+        background: $firstItemBg
+    &__photo
+        width: 50px  
+        height: 50px  
+        &_main-photo   
+            width: 100%
+            height: 100%      

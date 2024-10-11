@@ -1,0 +1,76 @@
+.work
+    padding: 100px 0
+    min-height: 948px
+    &__main__wrapper
+        display: grid
+        grid-template-columns: 714px 422px 
+        column-gap: 50px 
+        @media( max-width: 1200px) 
+            grid-template-columns: .8fr
+            justify-content: center
+            row-gap: 150px
+    &__left
+        display: grid 
+        grid-template-rows: repeat(2, auto) 1fr
+        @media( max-width: 1200px) 
+            display: grid
+            grid-template-columns: .8fr
+            justify-items: center  
+            justify-content: center    
+    &__right
+        @media( max-width: 1200px)   
+            display: grid
+            grid-row: 2 
+            grid-template-columns: 0.5fr
+            justify-items: center
+            justify-content: center
+    &__sub__wrapper  
+        margin-top: 54px
+        display: grid  
+        grid-template: auto/ repeat(2, 334px)
+        column-gap: 42px
+        @media( max-width: 767px)  
+           row-gap: 50px
+           grid-template: repeat(2, auto) / 0.8fr 
+    &__img-left
+        width: 334px
+        height: 210px
+        @media( max-width: 360px)
+            width: 300px
+    &__photo
+        display: flex
+        width: 100%
+        height: 100%    
+    &__date
+        margin-top: 12px
+        display: grid
+        grid-template: auto / 125px auto  
+        @media( max-width: 767px)
+            justify-content: center 
+    &__accordeon
+        margin-top: 12px          
+    &__img
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        background: url('icons/work/triangle.svg') no-repeat center
+        background-color: $thirdImgBg  
+    &__service
+        padding: 0 6px
+        display: grid
+        grid-template: 54px/ 40px 1fr
+        column-gap: 20px
+        align-items: center
+        width: 422px
+        height: 54px   
+        border-radius: 15px
+        background: $workAccordionBg
+        cursor: pointer
+        @media( max-width: 420px)
+            width: 300px
+    .active
+        background: $workAccordionActiveBg 
+    .text-noactive   
+        margin-bottom: 50px
+        display: none  
+           

@@ -1,0 +1,16 @@
+.special
+    padding: 68px 0 54px 0
+    background: $specialBg
+    min-height: 176px
+    &__wrapper
+        display: grid
+        grid-template: minmax(54px, auto) / 1fr 192px
+        column-gap: 44px
+        align-items: center
+        @media( max-width: 767px)
+            grid-template: minmax(54px, auto) / 1fr 150px
+        @media( max-width: 767px)     
+            column-gap: 75px
+        @media( max-width: 576px) 
+            grid-template: minmax(54px, auto) / 1fr 115px
+            column-gap: 10px    
