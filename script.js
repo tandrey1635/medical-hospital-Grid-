@@ -21,8 +21,7 @@ burger.addEventListener('click', ()=>{
 
 // аккордеон
 const accordeon = document.querySelectorAll('.work__service')
-const accordeonSubtitle = document.querySelectorAll('.work__subtitle-right')
-const accordeonText = document.querySelectorAll('.section__description')
+
 
 accordeon.forEach(accordeon=>{
     accordeon.addEventListener('click', ()=>{
