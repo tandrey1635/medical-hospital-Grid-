@@ -12,19 +12,19 @@
             align-content: center
             justify-content: center
             column-gap: 200px
-        @media( max-width: 991px) 
+        @media( max-width: 991px)
             column-gap: 100px
-        @media( max-width: 767px)  
-            grid-template: auto/ 310px  
+        @media( max-width: 767px)
+            grid-template: auto/ 310px
             justify-items: center
-        @media( max-width: 360px) 
-            grid-template: auto/ .8fr        
+        @media( max-width: 360px)
+            grid-template: auto/ .8fr
     &__items
         &_info
-            @media( max-width: 1225px) 
+            @media( max-width: 1225px)
                 grid-row: 2
-            @media( max-width: 767px) 
-                grid-row: 3    
+            @media( max-width: 767px)
+                grid-row: 3
     &__menu, &__form
         margin-top: 70px
     &__menu
@@ -32,7 +32,7 @@
         &_ml80
             margin-left: 80px
         &_ml45
-            margin-left: 45px    
+            margin-left: 45px
         &_mail::before, &_mobile::before, &_map::before
             content: ''
             background: url(icons/contacts/mail.svg)
@@ -43,11 +43,11 @@
             top: 0
         &_mobile::before
             background: url(icons/contacts/mobile.svg)
-        &_map::before 
-            background: url(icons/contacts/map.svg)   
+        &_map::before
+            background: url(icons/contacts/map.svg)
     &__list
         position: relative
-        margin-top: 22px 
+        margin-top: 22px
         &_triangle
             &::before
                 content: ''
@@ -57,25 +57,25 @@
                 position: absolute
                 left: -45px
                 top: -0px
-        &_m0 
-            margin: 0 
+        &_m0
+            margin: 0
     &__label
         display: grid
-        margin-top: 20px    
+        margin-top: 20px
     &__input, &__textarea
         width: 231px
-        padding: 0 10px 
+        padding: 0 10px
         font-size: 16px
-        background: transparent  
+        background: transparent
         border-bottom: 1px solid $contactsInput
         caret-color: $contactsCaretColor
         color: $contactsInputText
-        @media( max-width: 767px) 
+        @media( max-width: 767px)
             width: 300px
     &__textarea
-        height: 77px  
-    &__social    
+        height: 77px
+    &__social
         margin-top: 60px
         display: grid
         grid-template-columns: repeat(5, 25px)
-        column-gap: 25px   
+        column-gap: 25px
