@@ -6,24 +6,24 @@
         display: grid
         grid-template: auto/ 310px 135px 210px 235px
         column-gap: 100px
-        @media( max-width: 1225px)
+        @media (max-width: 1225px)
             grid-template: auto/ repeat(2, 310px)
             row-gap: 50px
             align-content: center
             justify-content: center
             column-gap: 200px
-        @media( max-width: 991px)
+        @media (max-width: 991px)
             column-gap: 100px
-        @media( max-width: 767px)
+        @media (max-width: 767px)
             grid-template: auto/ 310px
             justify-items: center
-        @media( max-width: 360px)
+        @media (max-width: 360px)
             grid-template: auto/ .8fr
     &__items
         &_info
-            @media( max-width: 1225px)
+            @media (max-width: 1225px)
                 grid-row: 2
-            @media( max-width: 767px)
+            @media (max-width: 767px)
                 grid-row: 3
     &__menu, &__form
         margin-top: 70px
@@ -70,7 +70,7 @@
         border-bottom: 1px solid $contactsInput
         caret-color: $contactsCaretColor
         color: $contactsInputText
-        @media( max-width: 767px)
+        @media (max-width: 767px)
             width: 300px
     &__textarea
         height: 77px
